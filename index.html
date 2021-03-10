@@ -10,39 +10,15 @@
 </head>
   
 <body>
+
   <h1>2Dmesher</h1>
-  
   
   <svg version="1.1" baseProfile="full" xmlns="http://www.w3.org/2000/svg"
   xmlns:xlink="http://www.w3.org/1999/xlink" width="960" height="700">
-    
 	<g id="mesh" transform="translate(0, 0)">
-	
-	  <path d="M10 10 L250 10 L250 250 L10 250 Z" style="stroke: red; fill:red;"></path>
-	  <path d="M310 10 L550 10 L550 250 L310 250 Z" style="stroke: black; fill:black;"></path>
-	
-	<script><![CDATA[
-	console.log('Running javascript inside SVG')
-	
-	console.log('Creating new path')
-	var para = document.createElement("path");
-	para.style.stroke = 'black';
-	para.style.fill = 'yellow';
-	para.setAttribute('d','M310 10 L550 10 L550 250 L310 250 Z');
-	console.log(para)
-	
-	console.log('Adding path to mesh element')
-	var element = document.getElementById("mesh");
-	element.appendChild(para);
-	console.log(element)
-	]]></script>
-	
-	
+	  <script xlink:href="app.js"> </script>
 	</g>
-  
-  
   </svg>
-  
   
 </body>
   
